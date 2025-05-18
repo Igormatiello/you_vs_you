@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações - No Shortcuts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>No Shortcuts</h1>
+            <p class="subtitle">Construa-se. Todos os dias.</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="frases.html">Frases</a></li>
+                <li><a href="anotacoes.html" class="active">Anotações</a></li>
+                <li><a href="personalidades.html">Personalidades</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Minhas Anotações e Pensamentos</h2>
+            <p>Este é um espaço para registrar insights, aprendizados e reflexões pessoais sobre disciplina, mentalidade e crescimento. Um diário de bordo da minha jornada de evolução.</p>
+        </section>
+
+        <section class="anotacoes">
+            <div class="anotacoes-grid">
+                <div class="anotacao-card">
+                    <h3>Lembre-se de que você é apenas um homem.</h3>
+                    <span class="data">18/05/2025</span>
+                    <div class="anotacao-completa" style="display: none;">
+                        <p>
+                            Essa frase, muitas vezes atribuída ao imperador romano e filósofo estoico Marco Aurélio, carrega uma verdade profunda e prática: a humildade diante da vida. Conta-se que, mesmo no auge do poder, Marco Aurélio mantinha ao seu lado alguém cuja função era lembrá-lo: "Você é apenas um homem." Essa prática não era um gesto de autodepreciação, mas um exercício consciente de equilíbrio emocional, espiritual e filosófico.
+                        </p>
+                        <p>
+                            📌 Significado e aplicação prática<br>
+                            Essa citação serve como um lembrete constante de que:
+                        </p>
+                        <ul>
+                            <li>Você não é tão grandioso quanto os elogios dizem.</li>
+                            <li>Você também não é tão desprezível quanto as críticas apontam.</li>
+                            <li>Você é humano — falho, passageiro, em construção.</li>
+                        </ul>
+                        <p>
+                            Ela é um antídoto contra os dois extremos: a arrogância e o auto-ódio.
+                        </p>
+                        <p>
+                            ⚖️ Quando usar essa lembrança no dia a dia:<br>
+                            Quando estiver sendo elogiado demais<br>
+                            Use-a para manter os pés no chão. O reconhecimento é bem-vindo, mas não deve inflar seu ego a ponto de você se esquecer do caminho que ainda há pela frente.
+                        </p>
+                        <p>
+                            Quando estiver sendo criticado ou subestimado<br>
+                            Lembre-se: críticas não definem seu valor. Você não é um fracasso só porque hoje falhou ou está sendo julgado injustamente.
+                        </p>
+                        <p>
+                            Quando conquistar algo importante<br>
+                            Ao alcançar metas, vencer desafios ou receber atenção, pense: "Sou apenas um homem." Isso evita a vaidade e fortalece o senso de propósito real.
+                        </p>
+                         <p>
+                            Ao se comparar com os outros<br>
+                            Evite tanto o sentimento de superioridade quanto o de inferioridade. Todos somos humanos, com histórias, quedas e reconstruções.
+                        </p>
+                         <p>
+                            Ao lidar com pressão, expectativas ou medo de falhar<br>
+                            Esse lembrete reduz o peso desnecessário: você não precisa ser perfeito, só constante. Você não precisa carregar o mundo, apenas fazer o seu papel com integridade.
+                        </p>
+                        <p>
+                            🧘‍♂️ Reflexão final<br>
+                            Ao internalizar essa verdade, você se blinda contra as oscilações do mundo externo. Não importa o palco ou a plateia — seja você mesmo, um homem em busca de virtude, consciência e presença. Isso é mais do que suficiente.
+                        </p>
+                         <p>
+                            "Você é apenas um homem. Nem um deus quando vence, nem um lixo quando erra. Você é um ser humano. E isso basta para continuar."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Sem atalhos. Apenas trabalho honesto.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const anotacaoCards = document.querySelectorAll('.anotacao-card');
+
+            anotacaoCards.forEach(card => {
+                card.style.cursor = 'pointer'; // Opcional: Muda o cursor para indicar que é clicável
+                card.addEventListener('click', function() {
+                    const conteudoCompleto = this.querySelector('.anotacao-completa');
+                    if (conteudoCompleto.style.display === 'none') {
+                        conteudoCompleto.style.display = 'block';
+                    } else {
+                        conteudoCompleto.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
