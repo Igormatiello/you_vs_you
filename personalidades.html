@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalidades Inspiradoras - No Shortcuts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .personalidades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .personalidade-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .personalidade-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .personalidade-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .personalidade-card-content {
+            padding: 1.5rem;
+        }
+
+        .personalidade-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .personalidade-card p {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .personalidade-card a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .personalidade-card a:hover {
+            background-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>No Shortcuts</h1>
+            <p class="subtitle">Construa-se. Todos os dias.</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="frases.html">Frases</a></li>
+                <li><a href="anotacoes.html">Anotações</a></li>
+                <li><a href="personalidades.html" class="active">Personalidades</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Personalidades Inspiradoras</h2>
+            <p>Conheça as pessoas que inspiram através de suas histórias, mentalidade e conquistas. Cada uma delas tem algo único a ensinar sobre disciplina, resiliência e crescimento pessoal.</p>
+        </section>
+
+        <section class="personalidades-grid">
+            <div class="personalidade-card">
+                <img src="images/personalidades/david-goggins.jpg" alt="David Goggins">
+                <div class="personalidade-card-content">
+                    <h3>David Goggins</h3>
+                    <p>Ex-Navy SEAL, Ultra-maratonista, Autor</p>
+                    <a href="personalidades/david-goggins.html">Conhecer mais</a>
+                </div>
+            </div>
+
+            <div class="personalidade-card">
+                <img src="images/personalidades/chris-williamson.jpg" alt="Chris Williamson">
+                <div class="personalidade-card-content">
+                    <h3>Chris Williamson</h3>
+                    <p>Podcaster, Pensador, Autor</p>
+                    <a href="personalidades/chris-williamson.html">Conhecer mais</a>
+                </div>
+            </div>
+
+            <div class="personalidade-card">
+                <img src="images/personalidades/jocko-willink.jpg" alt="Jocko Willink">
+                <div class="personalidade-card-content">
+                    <h3>Jocko Willink</h3>
+                    <p>Ex-Navy SEAL, Líder, Autor</p>
+                    <a href="personalidades/jocko-willink.html">Conhecer mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Sem atalhos. Apenas trabalho honesto.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
